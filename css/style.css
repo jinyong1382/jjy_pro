@@ -1,0 +1,118 @@
+/* reset */
+* {margin: 0; padding: 0; color: #fff; text-decoration: none;}
+li{list-style: none;}
+table{border-spacing: 0;}
+.clearfix::before, .clearfix::after{display: block;
+    content: ''; clear: both;}
+#wrap{width: 1200px; margin: 0 auto; text-align: center;}
+
+
+
+/* header */
+#header{width: 100%; background-color: #ffffff;}
+#header .logo{float: left; background-color: #ffffff;
+    width: 200px; height: 100px; line-height: 100px;}
+#header .nav{float: right; background-color: #ab47bc;
+    margin-top: 25px; width: 600px; z-index: 1000;}
+#header .nav li{position: relative; float: left; display: block;
+    width: 25%;}
+#header .nav li a{display: block; padding: 10px; font-size: 20px;}
+#header .nav li a:hover{background: rgba(0,0,0,0.4);}
+#header .nav li ul.submenu{display: none; position: absolute;
+    top: 45px; background: #5c6bc0; z-index: 1000;}
+#header .nav li ul.submenu li{width: 100%;}
+
+
+
+/* banner */
+#banner{text-align: center; width: 1200px; height: 360px; overflow: hidden;}
+
+
+
+/* slide */
+.slidelist{position: relative; width: 1200px; height: 360px;}
+.slidelist .slideimg{position: relative;}
+.slidelist .slideimg h2{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(160,80,160,0.5); padding: 10px 30px; border-radius: 25px;}
+.slidelist .slideimg img{display: block;}
+
+
+
+/* contents */
+#contents{width: 1200px; text-align: center;}
+#contents > div{float: left; width: 400px; height: 200px;}
+#contents > div.cont1{background-color: #ede7f6;}
+#contents > div.cont2{background-color: #e3f2fd;}
+#contents > div.cont3{background-color: #81d4fa; line-height: 200px;}
+
+
+
+/* tab-menu (공지사항 하부메뉴) */
+.tab-menu{}
+.tab-menu .tab-btn{}
+.tab-menu .tab-btn ul{margin: 15px; overflow: hidden;}
+.tab-menu .tab-btn li{float: left; width: 150px; background: #5e35b1; text-align: center;}
+.tab-menu div a:hover{opacity: 0.4;}
+.tab-menu .tab-btn li.active{text-decoration: underline;}
+.tab-menu .tab-btn li a{display: block; color: aqua; padding: 10px;}
+.tab-menu .tab-cont{margin: 15px; background: #9575cd; text-align: left; padding: 10px;}
+
+
+
+/* tab-menu2 (갤러리 하부메뉴) */
+.tab-menu2{}
+.tab-menu2 .tab-btn2{}
+.tab-menu2 .tab-btn2 ul{margin: 15px; overflow: hidden;}
+.tab-menu2 .tab-btn2 li{float: left; width: 150px; background: #1e88e5; text-align: center;}
+.tab-menu2 .tab-btn2 li.active2{text-decoration: underline;}
+.tab-menu2 .tab-btn2 li a{display: block; color: aqua; padding: 10px;}
+
+.tab-menu2 .tab-cont2{margin: 15px; background: #64b5f6; text-align: left; padding: 10px;}
+
+.tab-menu2 li .active2{display: block;}
+.tab-menu2 div a:hover{opacity: 0.4;}
+.tab-menu2 img{position: relative; width: 112.5px; height: 92.5px;}
+
+
+
+/* footer */
+#footer{float: left; display: block; overflow: hidden;}
+#footer div{position: relative; float: left; height: 100px; vertical-align: middle; }
+#footer .foot1{float: left; width: 200px;}
+#footer .foot2{float: left; width: 800px; background-color: #ce93d8; color: #000000; }
+#footer .foot2 h6{padding-top: 20px;}
+#footer .foot3{width: 200px; background-color: #ce93d8; line-height: 100px;}
+
+
+
+/* 배너 하부 */
+.cont3 .cont3-img{position: relative; width: 400px; height: 300px; line-height: 50px;}
+.cont3 .cont3-img h2{position: absolute; left: 50%; top: 35%; transform: translate(-50%, -50%); background: rgba(80,80,160,0.5); padding: 1px 30px; border-radius: 25px;}
+.cont4 .cont4-img img{display: block;}
+
+
+
+/* tab-menu3 (SNS 하부메뉴) */
+.tab-menu3{height: 30px;}
+.tab-menu3 .tab-cont3{margin: 15px; background: #ce93d8; text-align: left; padding: 5px; border-radius: 20px; background: #ce93d8;}
+.tab-menu3 div a:hover{opacity: 0.4;}
+.tab-menu3 img{position: relative; width: 45px; height: 45px;}
+
+
+
+/* 공지사항 팝업 */
+.tab-contlayer{
+    display: none;
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 500px; height: 500px;
+    background: #fff;
+    border: 2px solid #000;
+    margin-left: -250px;
+    margin-top: -250px;
+    z-index: 900;
+}
+.tab-contlayer h2{padding: 20px; color: #000;}
+.tab-contlayer h4{padding: 20px; color: #000;}
+.tab-contlayer .close{
+    position: absolute; bottom: 20px; right: 20px; color: #000;
+}
