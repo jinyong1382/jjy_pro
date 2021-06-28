@@ -11,9 +11,9 @@ table{border-spacing: 0;}
 /* header */
 #header{width: 100%; background-color: #ffffff;}
 #header .logo{float: left; background-color: #ffffff;
-    width: 200px; height: 100px; line-height: 100px;}
+    width: 200px; height: 100px; line-height: 140px;}
 #header .nav{float: right; background-color: #ab47bc;
-    margin-top: 25px; width: 600px; z-index: 1000;}
+    margin-top: 30px; width: 600px; z-index: 1000;}
 #header .nav li{position: relative; float: left; display: block;
     width: 25%;}
 #header .nav li a{display: block; padding: 10px; font-size: 20px;}
@@ -25,12 +25,12 @@ table{border-spacing: 0;}
 
 
 /* banner */
-#banner{text-align: center; width: 1200px; height: 360px; overflow: hidden;}
+#banner{text-align: center; width: 1200px; height: 500px; overflow: hidden;}
 
 
 
 /* slide */
-.slidelist{position: relative; width: 1200px; height: 360px;}
+.slidelist{position: relative; width: 1200px; height: 500px;}
 .slidelist .slideimg{position: relative;}
 .slidelist .slideimg h2{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(160,80,160,0.5); padding: 10px 30px; border-radius: 25px;}
 .slidelist .slideimg img{display: block;}
@@ -42,7 +42,7 @@ table{border-spacing: 0;}
 #contents > div{float: left; width: 400px; height: 200px;}
 #contents > div.cont1{background-color: #ede7f6;}
 #contents > div.cont2{background-color: #e3f2fd;}
-#contents > div.cont3{background-color: #81d4fa; line-height: 200px;}
+#contents > div.cont3{background-color: #e0f7fa; line-height: 200px;}
 
 
 
@@ -50,11 +50,11 @@ table{border-spacing: 0;}
 .tab-menu{}
 .tab-menu .tab-btn{}
 .tab-menu .tab-btn ul{margin: 15px; overflow: hidden;}
-.tab-menu .tab-btn li{float: left; width: 150px; background: #5e35b1; text-align: center;}
+.tab-menu .tab-btn li{float: left; width: 150px; background: #7e57c2; text-align: center; border-radius: 15px;}
 .tab-menu div a:hover{opacity: 0.4;}
 .tab-menu .tab-btn li.active{text-decoration: underline;}
 .tab-menu .tab-btn li a{display: block; color: aqua; padding: 10px;}
-.tab-menu .tab-cont{margin: 15px; background: #9575cd; text-align: left; padding: 10px;}
+.tab-menu .tab-cont{margin: 15px; background: #b39ddb; text-align: left; padding: 10px;}
 
 
 
@@ -62,40 +62,52 @@ table{border-spacing: 0;}
 .tab-menu2{}
 .tab-menu2 .tab-btn2{}
 .tab-menu2 .tab-btn2 ul{margin: 15px; overflow: hidden;}
-.tab-menu2 .tab-btn2 li{float: left; width: 150px; background: #1e88e5; text-align: center;}
+.tab-menu2 .tab-btn2 li{float: left; width: 150px; background: #42a5f5; text-align: center; border-radius: 15px;}
 .tab-menu2 .tab-btn2 li.active2{text-decoration: underline;}
 .tab-menu2 .tab-btn2 li a{display: block; color: aqua; padding: 10px;}
 
-.tab-menu2 .tab-cont2{margin: 15px; background: #64b5f6; text-align: left; padding: 10px;}
+.tab-menu2 .tab-cont2{margin: 15px; background: #90caf9; text-align: left; padding: 10px;}
 
 .tab-menu2 li .active2{display: block;}
 .tab-menu2 div a:hover{opacity: 0.4;}
-.tab-menu2 img{position: relative; width: 112.5px; height: 92.5px;}
+.tab-menu2 img{position: relative; width: 112.5px; height: 87.5px;}
+
+
+
+/* 바로가기 */
+.cont3{position: relative; float: left; z-index: 990;}
+.cont3 .cont3-img{position: relative; width: 140px; height: 200px; float: left; }
+.cont3 .cont3-img ul{width:190px; height: 190px; padding: 10px 5px; }
+.cont3 .cont3-img ul li{width: 100%; height: 55px; margin: 0 0 8px 0; background: #80deea; border: solid 1px; box-sizing: border-box; border-radius: 25px;}
+.cont3 .cont3-img ul li:hover{background:#999;}
+.cont3 .cont3-img ul li a{display: block; width: 100%; height: 55px; line-height: 55px; box-sizing: border-box; padding: 0 10px; position: relative;}
+.cont3 .cont3-img ul li a img{float: left; padding-top: 2px;}
+.cont3 .cont3-img ul li a span{width: 180px; height: 55px; line-height: 55px; font-size: 16px; position: absolute; top: 0; left:50px; text-align: center;}
+
+.cont4{position: absolute; width: 400px; height: 200px;}
 
 
 
 /* footer */
-#footer{float: left; display: block; overflow: hidden;}
-#footer div{position: relative; float: left; height: 100px; vertical-align: middle; }
-#footer .foot1{float: left; width: 200px;}
-#footer .foot2{float: left; width: 800px; background-color: #ce93d8; color: #000000; }
-#footer .foot2 h6{padding-top: 20px;}
-#footer .foot3{width: 200px; background-color: #ce93d8; line-height: 100px;}
-
-
-
-/* 배너 하부 */
-.cont3 .cont3-img{position: relative; width: 400px; height: 300px; line-height: 50px;}
-.cont3 .cont3-img h2{position: absolute; left: 50%; top: 35%; transform: translate(-50%, -50%); background: rgba(80,80,160,0.5); padding: 1px 30px; border-radius: 25px;}
-.cont4 .cont4-img img{display: block;}
+#footer{float: left; display: block; text-align: center; overflow: hidden;}
+#footer div{position: relative; vertical-align: middle;}
+#footer .foot1{float: left; width: 200px; height: 114px;}
+#footer .foot2{float: left; width: 800px; height: 89px; background: #90bcd7; color: #000000; padding-top: 15px;}
+#footer .foot3{float: left; width: 200px; height: 55px; background: #90bcd7;}
+#footer .foot4{float: left; width: 200px; height: 49px; background: #90bcd7;}
 
 
 
 /* tab-menu3 (SNS 하부메뉴) */
-.tab-menu3{height: 30px;}
-.tab-menu3 .tab-cont3{margin: 15px; background: #ce93d8; text-align: left; padding: 5px; border-radius: 20px; background: #ce93d8;}
-.tab-menu3 div a:hover{opacity: 0.4;}
-.tab-menu3 img{position: relative; width: 45px; height: 45px;}
+.foot-menu3{}
+.foot-menu3 .foot-cont3{text-align: left; top: 12px; margin-left: 42px;}
+.foot-menu3 div a:hover{opacity: 0.4;}
+.foot-menu3 img{position: relative; width: 35px; height: 35px;}
+
+
+/* footer (패밀리사이트 하부메뉴) */
+#footer .foot4 select{font-size: 16px; margin-top: 12px; width: 135px; height: 25px; background: #90bcd7;}
+#footer .foot4 select option{font-size: 16px;}
 
 
 
